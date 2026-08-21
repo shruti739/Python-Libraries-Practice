@@ -4,7 +4,7 @@ import seaborn as sns
 
 d = pd.read_csv("tips.csv")
 print(d)
-
+'''
 sns.lineplot(
     x = "total_bill",
     y = "tip",
@@ -15,6 +15,41 @@ sns.lineplot(
     markers = ["*","o"],
     dashes = False,
     palette = "muted",
-    legend = False
+    legend = False,
+    markersize = 5
 )
+plt.title("Tips_dataset_Lineplot chart")
+plt.grid()
 plt.show()
+'''
+
+'''
+sns.lineplot(
+    x = "tip",
+    y = "total_bill",
+    data = d,
+    hue = "smoker",
+    style = "smoker",
+    dashes = False,
+    palette = "Blues"
+)
+plt.title("Tips_dataset_Lineplot chart")
+plt.grid()
+plt.show()
+'''
+
+
+
+sns.lineplot(
+    x = "tip",
+    y = "total_bill",
+    data = d,
+    hue = "smoker",
+    style = "time",
+    dashes = False,
+    palette = "deep"
+)
+plt.title("Tips_dataset_Lineplot chart")
+plt.grid()
+plt.show()
+
