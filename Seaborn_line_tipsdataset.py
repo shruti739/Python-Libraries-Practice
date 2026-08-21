@@ -47,7 +47,8 @@ sns.lineplot(
     hue = "smoker",
     style = "time",
     dashes = False,
-    palette = "deep"
+    palette = "deep",
+    color = ["brown","pink"]
 )
 plt.title("Tips_dataset_Lineplot chart")
 plt.grid()

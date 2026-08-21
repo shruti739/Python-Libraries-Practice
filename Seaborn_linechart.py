@@ -8,6 +8,20 @@ Seaborn :
     always have to use 2D data (dataframe) --> import pandas as pd
     no need to assign x y axis manually - assigned while assigning the data 
 
+    colors =
+        "deep"
+        "muted"
+        "bright"
+        "pastel"
+        "dark"
+        "colorblind"
+        "Blues"
+        "Greens"
+        "Reds"
+        "Oranges"
+        "Purples"
+        "Greys"
+
 '''
 '''
 line chart :
@@ -72,12 +86,11 @@ sns.lineplot(
     y = "MARKS",        # data on y-axis
     data = df,          # datafame from where we are accessing x and y axis data    
     hue = "Gender",     # to groups the data on the basis of value , here gender 
-    #style = "Gender",   # change the line style diff gender
+    #style = "Gender",  # change the line style diff gender
     markers = "o" ,
     markersize = 10,
     linewidth = 2,
     linestyle = "dotted",       # linestyle and style won't work together 
-    legend = False 
-
+    legend = False              # to remove actomatically created legend box 
 )
 plt.show()
